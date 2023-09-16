@@ -3,7 +3,7 @@
 To develop a program to evauate the performance of a policy.
 
 ## PROBLEM STATEMENT:
-The problem statement is Five stage slippery walk where there are five stages excluding goal and hole.The problem is stochastic thus doesnt a transition probability of 1 for each action it takes.It changes according to the state and policy.
+The problem statement is a Five stage slippery walk where there are five stages excluding goal and hole.The problem is stochastic thus doesnt allow transition probability of 1 for each action it takes.It changes according to the state and policy.
 ### State Space:
 The states include two terminal states: 0-Hole[H] and 6-Goal[G].  
 It has five non terminal states includin starting state.
