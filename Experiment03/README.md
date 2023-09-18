@@ -18,14 +18,20 @@ The transition probabilities for the problem statement is:
 To reach state 7 (Goal) : +1
 otherwise : 0
 
-## POLICY ITERATION ALGORITHM
+## POLICY ITERATION ALGORITHM:
+1. Initialize a random policy, `pi`, assigning a random action to each state.
+2. Repeat until convergence:
+   a. Perform policy evaluation: Calculate the state-value function `V` for the current policy `pi` using the Bellman equation and a small threshold `theta`.
+   b. Perform policy improvement: Update the policy `pi` by selecting the action that maximizes the expected return from each state based on the current value function `V`.
+   c. Check for convergence: If the updated policy is the same as the previous policy, break the loop as the policy has converged.
+3. Return the converged value function `V` and the optimal policy `pi`.
 
+This algorithm iteratively improves the policy by first evaluating its performance and then making greedy improvements based on the calculated value function until the policy no longer changes.
 
 ## POLICY IMPROVEMENT FUNCTION
 ```python
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
-    # Write your code here to implement policy improvement algorithm
     for s in range(len(P)):
       for a in range(len(P[s])):
         for prob,next_state,reward,done in P[s][a]:
@@ -38,7 +44,6 @@ def policy_improvement(V, P, gamma=1.0):
 ```python
 def policy_iteration(P, gamma=1.0, theta=1e-10):
     random_actions = np.random.choice(tuple(P[0].keys()), len(P))
-    # Write your code here to implement the policy iteration algorithm
     pi=lambda s:{s:a for s,a in enumerate(random_actions)}[s]
     while True:
       old_pi={s:pi(s) for s in range(len(P))}
