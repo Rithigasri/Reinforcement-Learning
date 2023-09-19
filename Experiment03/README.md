@@ -25,10 +25,9 @@ otherwise : 0
    b. Perform policy improvement: Update the policy `pi` by selecting the action that maximizes the expected return from each state based on the current value function `V`.
    c. Check for convergence: If the updated policy is the same as the previous policy, break the loop as the policy has converged.
 3. Return the converged value function `V` and the optimal policy `pi`.
+4. This algorithm iteratively improves the policy by first evaluating its performance and then making greedy improvements based on the calculated value function until the policy no longer changes.
 
-This algorithm iteratively improves the policy by first evaluating its performance and then making greedy improvements based on the calculated value function until the policy no longer changes.
-
-## POLICY IMPROVEMENT FUNCTION
+## POLICY IMPROVEMENT FUNCTION:
 ```python
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
@@ -56,7 +55,11 @@ def policy_iteration(P, gamma=1.0, theta=1e-10):
 ```
 
 ## OUTPUT:
-Mention the optimal policy, optimal value function , success rate for the optimal policy.
-
+### OPTIMAL POLICY:  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/c082a45c-4cb9-4283-8132-fdf5c89f9071)
+### OPTIMAL VALUE FUNCTION:  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/32f325de-73a5-46cf-9e98-1c5a852e3c5c)
+### SUCCESS RATE FOR THE OPTIMAL POLICY:  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/377f5c6b-9d14-4d79-b205-3c49ba050861)
 ## RESULT:
 Thus, a program is developed to perform policy iteration for the given MDP.
