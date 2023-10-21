@@ -14,8 +14,6 @@ The transition probabilities for the problem statement is:
 * 66.66% - The agent moves in orthogonal direction.  
 ### Reward:
 To reach state 15 (Goal) : +1 otherwise : 0
-### Graphical Representation:
-![Alt text](image.png)
 ## MONTE CARLO CONTROL ALGORITHM
 1. Initialize Q-table and tracking array.
 2. Create schedules for alpha and epsilon decay.
@@ -135,6 +133,15 @@ goal_state = 15
 results(env, optimal_pi, goal_state=goal_state)
 ```
 ## OUTPUT:
+### Optimal Value Function   
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/2492d078-5a41-4180-8bb8-2cb6f329bc28)  
+### Action Value Function  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/faf78eb2-658b-427b-83b0-ec301c225ef0)  
+### State Value Function  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/9233cc11-9a04-4729-9f98-6e6d0554c7d3)  
+### Success Rate For Optimal Policy  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/5b55501a-8e9f-4870-a120-e3fa96b9c81b)  
+
 
 ## RESULT:
 Thus a Python program is developed to find the optimal policy for the given RL environment using the Monte Carlo algorithm.
