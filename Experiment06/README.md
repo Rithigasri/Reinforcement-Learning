@@ -72,21 +72,18 @@ def sarsa(env,
 ```
 
 ## OUTPUT:
-### Alpha-Epsilon Schedule:
-![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/65e0ea0b-63f1-45b9-b39f-be0f85fdab14)
-
 ### Optimal Policy:
-![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/a6e5fae7-6bdb-4def-80c9-aa766fa7ebfe)
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/a7b783a5-017b-426d-9456-ee86254c3f95)
 ### First Visit Monte Carlo Method:
-![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/811469dc-d44d-4a1a-9175-f12760a5f901)
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/baac74dd-3d21-4df3-ac64-80a26b8f44d6)
 ### SARSA Learning Algorithm:
-![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/7797daef-57e3-4ad9-8088-4c0f1a79595d)
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/17497297-e1a9-4a9a-8576-7d48aaa970f4)
 
 ### Plot for State Value Function -Monte Carlo VS SARSA LEARNING:
 * First Visit Monte Carlo:
-  ![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/26589faa-ccc5-4768-84a7-da313199d535)
+  ![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/30f4e04f-0bcf-4957-b3cf-376504fb5904)
 * SARSA Learning:  
-![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/3a7b25d2-9d49-4f00-b2bc-89dc16dd698c)
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/1791a55c-7f7b-4e65-a966-51377be9f1f5)
 
 ## RESULT:
 Thus, the implementation of SARSA learning algorithm was implemented successfully.
