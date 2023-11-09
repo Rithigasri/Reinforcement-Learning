@@ -72,17 +72,18 @@ def sarsa(env,
 ```
 
 ## OUTPUT:
-Mention the optimal policy, optimal value function , success rate for the optimal policy.
-
-Include plot comparing the state value functions of Monte Carlo method and SARSA learning.
-### Alpha-Epsilon Schedule:
-
 ### Optimal Policy:
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/a7b783a5-017b-426d-9456-ee86254c3f95)
+### First Visit Monte Carlo Method:
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/baac74dd-3d21-4df3-ac64-80a26b8f44d6)
+### SARSA Learning Algorithm:
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/17497297-e1a9-4a9a-8576-7d48aaa970f4)
 
-### Optimal Value Function:
+### Plot for State Value Function -Monte Carlo VS SARSA LEARNING:
+* First Visit Monte Carlo:
+  ![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/30f4e04f-0bcf-4957-b3cf-376504fb5904)
+* SARSA Learning:  
+![image](https://github.com/Rithigasri/Reinforcement-Learning/assets/93427256/1791a55c-7f7b-4e65-a966-51377be9f1f5)
 
-### Success Rate For The Optimal Policy:
-
-### Plot for State Value Function -Monte Carlo VS SARSA LEARNING
 ## RESULT:
 Thus, the implementation of SARSA learning algorithm was implemented successfully.
